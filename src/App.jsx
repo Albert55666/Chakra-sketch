@@ -47,7 +47,7 @@ function App() {
           </Flex>
         </HStack>
       </Box>
-      <Box w="57%" minH="100vh" m="auto">
+      <Box w={["100%", "100%", "57%"]} minH="100vh" m="auto">
         <Box w="100%" bgColor="#6357ff" mt="20px" minH="90px">
           <Flex flexDirection="column" justify="center" align="center">
             <Text>Welcome!</Text>
@@ -85,7 +85,7 @@ function App() {
         </Flex>
         <Flex
           wrap="wrap"
-          w="80%"
+          w={["100%", "100%", "80%"]}
           m="30px auto"
           bgColor="#f6f6f6"
           justify="center"
@@ -141,7 +141,7 @@ function App() {
             <Text>Savings Goal</Text>
             <Text>View all</Text>
           </Flex>
-          <Box h="80px" m="10px" paddingBlock="10px" bgColor="whiteAlpha.900">
+          <Box h="80px" m="10px 0" paddingBlock="10px" bgColor="whiteAlpha.900">
             <Flex justify="space-between" h="100%" borderLeft="2px solid teal">
               <Box>
                 <Heading as="h2" fontSize="15px">
@@ -164,7 +164,12 @@ function App() {
               </Flex>
             </Flex>
           </Box>
-          <Box h="80px" m="10px" paddingBlock="10px" bgColor="whiteAlpha.900">
+          <Box
+            h="80px"
+            m="10px 1px"
+            paddingBlock="10px"
+            bgColor="whiteAlpha.900"
+          >
             <Flex justify="space-between" h="100%" borderLeft="2px solid teal">
               <Box>
                 <Heading as="h2" fontSize="15px">
@@ -187,7 +192,12 @@ function App() {
               </Flex>
             </Flex>
           </Box>
-          <Box h="80px" m="10px" paddingBlock="10px" bgColor="whiteAlpha.900">
+          <Box
+            h="80px"
+            m="10px 1px"
+            paddingBlock="10px"
+            bgColor="whiteAlpha.900"
+          >
             <Flex justify="space-between" h="100%" borderLeft="2px solid teal">
               <Box>
                 <Heading as="h2" fontSize="15px">
@@ -210,7 +220,12 @@ function App() {
               </Flex>
             </Flex>
           </Box>
-          <Box h="80px" m="10px" paddingBlock="10px" bgColor="whiteAlpha.900">
+          <Box
+            h="80px"
+            m="10px 1px"
+            paddingBlock="10px"
+            bgColor="whiteAlpha.900"
+          >
             <Flex justify="space-between" h="100%" borderLeft="2px solid teal">
               <Box>
                 <Heading as="h2" fontSize="15px">
@@ -269,7 +284,7 @@ function App() {
             <Text>My Cart</Text>
             <Text>View all</Text>
           </Flex>
-          <Flex>
+          <Flex m="10px 1px">
             <Flex minH="190px" bgColor="#5a2ce7" width="33%">
               <Box w="70%">
                 <Text>Total balance</Text>
@@ -313,7 +328,7 @@ function App() {
             justify="space-between"
             bgColor="whiteAlpha.900"
           >
-            <Flex align="center" w="30%" bgColor="#efefef">
+            <Flex align="center" minW="30%">
               <Image
                 boxSize="50px"
                 objectFit="cover"
@@ -334,7 +349,7 @@ function App() {
             justify="space-between"
             bgColor="whiteAlpha.900"
           >
-            <Flex align="center" w="30%" bgColor="#efefef">
+            <Flex align="center" minW="30%">
               <Image
                 boxSize="50px"
                 objectFit="cover"
@@ -355,7 +370,7 @@ function App() {
             justify="space-between"
             bgColor="whiteAlpha.900"
           >
-            <Flex align="center" w="30%" bgColor="#efefef">
+            <Flex align="center" minW="30%">
               <Image
                 boxSize="50px"
                 objectFit="cover"
@@ -376,7 +391,7 @@ function App() {
             justify="space-between"
             bgColor="whiteAlpha.900"
           >
-            <Flex align="center" w="30%" bgColor="#efefef">
+            <Flex align="center" minW="30%">
               <Image
                 boxSize="50px"
                 objectFit="cover"
@@ -395,7 +410,7 @@ function App() {
         pt="40px"
         mt="30px"
         pb="20px"
-        height="250px"
+        minH="250px"
         bgColor="#6236ff"
         w="100%"
       >
@@ -407,6 +422,7 @@ function App() {
           height="80%"
           mt="10px"
           bgColor="#6236ff"
+          wrap={["wrap", "wrap", "nowrap"]}
           justify="space-around"
           align="center"
         >
@@ -416,7 +432,7 @@ function App() {
             h="80%"
             direction="column"
             borderRadius="8px"
-            w="19%"
+            w={["45%", "45%", "19%"]}
             bgColor="#f4f4f4"
             m="5px"
           >
@@ -436,7 +452,7 @@ function App() {
             h="80%"
             direction="column"
             borderRadius="8px"
-            w="19%"
+            w={["45%", "45%", "19%"]}
             bgColor="#f4f4f4"
             m="5px"
           >
@@ -455,7 +471,7 @@ function App() {
             h="80%"
             direction="column"
             borderRadius="8px"
-            w="19%"
+            w={["45%", "45%", "19%"]}
             bgColor="#f4f4f4"
             m="5px"
           >
@@ -475,7 +491,7 @@ function App() {
             h="80%"
             direction="column"
             borderRadius="8px"
-            w="19%"
+            w={["45%", "45%", "19%"]}
             bgColor="#f4f4f4"
             m="5px"
           >
@@ -494,7 +510,7 @@ function App() {
             h="80%"
             direction="column"
             borderRadius="8px"
-            w="19%"
+            w={["45%", "45%", "19%"]}
             bgColor="#f4f4f4"
             m="5px"
           >
@@ -616,17 +632,18 @@ function App() {
         </Flex>
       </Box>
       <Box w="100%">
-        <Box w="57%" m="auto">
+        <Box w={["100%", "100%", "57%"]} m="auto">
           <Flex h="50px" p="40px 0px" align="center">
             <Text>Recent Post</Text>
           </Flex>
           <Flex
             minH="200px"
+            wrap={["wrap", "wrap", "nowrap"]}
             justify="space-between"
             align="center"
             bgColor="#efefef"
           >
-            <Box minH="80%" bgColor="#5a2ce7" m="0.5" width="19%">
+            <Box minH="80%" bgColor="#5a2ce7" m="0.5" w={["30%", "30%", "19%"]}>
               <Image
                 // boxSize="50px"
                 h="40%"
@@ -637,7 +654,7 @@ function App() {
               />
               <Box p="5px">The market is very volatile and as</Box>
             </Box>
-            <Box minH="80%" bgColor="#5a2ce7" m="0.5" width="19%">
+            <Box minH="80%" bgColor="#5a2ce7" m="0.5" w={["30%", "30%", "19%"]}>
               <Image
                 // boxSize="50px"
                 h="40%"
@@ -648,7 +665,7 @@ function App() {
               />
               <Box p="5px">The market is very volatile and as</Box>
             </Box>
-            <Box minH="80%" bgColor="#5a2ce7" m="0.5" width="19%">
+            <Box minH="80%" bgColor="#5a2ce7" m="0.5" w={["30%", "30%", "19%"]}>
               <Image
                 // boxSize="50px"
                 h="40%"
@@ -659,7 +676,7 @@ function App() {
               />
               <Box p="5px">The market is very volatile and as</Box>
             </Box>
-            <Box minH="80%" bgColor="#5a2ce7" m="0.5" width="19%">
+            <Box minH="80%" bgColor="#5a2ce7" m="0.5" w={["30%", "30%", "19%"]}>
               <Image
                 // boxSize="50px"
                 h="40%"
@@ -670,7 +687,7 @@ function App() {
               />
               <Box p="5px">The market is very volatile and as</Box>
             </Box>
-            <Box minH="80%" bgColor="#5a2ce7" m="0.5" width="19%">
+            <Box minH="80%" bgColor="#5a2ce7" m="0.5" w={["30%", "30%", "19%"]}>
               <Image
                 // boxSize="50px"
                 h="40%"
